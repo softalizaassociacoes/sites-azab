@@ -159,11 +159,15 @@ strong, b { font-weight: 600; color: var(--ink); }
 .brand img { height: 52px; width: auto; transition: height .35s var(--ease); }
 .brand__fallback { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; color: #fff; letter-spacing: .02em; }
 
-/* transparent over hero */
-.site-header.is-transparent { background: transparent; }
-.site-header.is-transparent .nav__link { color: rgba(255,255,255,.92); }
+/* transparent over hero — scrim escuro garante legibilidade do menu branco sobre qualquer foto */
+.site-header.is-transparent {
+  background: linear-gradient(to bottom, rgba(11,26,17,.62) 0%, rgba(11,26,17,.28) 55%, rgba(11,26,17,0) 100%);
+}
+.site-header.is-transparent .nav__link { color: #fff; text-shadow: 0 1px 10px rgba(0,0,0,.45); }
 .site-header.is-transparent .nav__link:hover { color: #fff; }
-.site-header.is-transparent .brand__fallback { color: #fff; }
+.site-header.is-transparent .nav__item.is-active > .nav__link { color: var(--gold); }
+.site-header.is-transparent .brand__fallback { color: #fff; text-shadow: 0 1px 10px rgba(0,0,0,.45); }
+.site-header.is-transparent .brand img { filter: drop-shadow(0 1px 8px rgba(0,0,0,.4)); }
 .site-header.is-transparent .burger span { background: #fff; }
 
 /* solid (scrolled or interior) */
