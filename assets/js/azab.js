@@ -136,7 +136,7 @@
   var PRESENT_UFS = (function(){ var s={}; MEMBERS.forEach(function(m){ if(m.uf) s[m.uf]=1; }); s['BA']=1; return Object.keys(s); })();
 
   var PARTNERS = [
-    { n:'WAZA',       img:'Captura-de-tela_20-2-2025_95122_docs.google.com_-1-e1740055958819.jpeg', href:'https://www.waza.org/' },
+    { n:'WAZA',       img:'waza.png',       href:'https://www.waza.org/' },
     { n:'ALPZA',      img:'alpza.png',      href:'https://www.alpza.com/pt' },
     { n:'IUCN',       img:'unnamed-4.png',  href:'https://iucn.org/' },
     { n:'Species360', img:'Species360.png', href:'https://species360.org/' }
@@ -212,7 +212,7 @@
         '<div class="container">'+
           '<div class="footer-grid">'+
             '<div class="footer-brand">'+
-              '<img src="'+ASSET+'Logo-AZAB-PNG.png" alt="AZAB">'+
+              '<img src="'+ASSET+'Logo-AZAB-branco.png" alt="AZAB — Associação de Zoológicos e Aquários do Brasil">'+
               '<p>A Associação de Zoológicos e Aquários do Brasil congrega e fortalece as instituições brasileiras, promovendo a conservação da biodiversidade, o bem-estar animal, a educação e a pesquisa desde 1977.</p>'+
               '<div class="footer-social">'+
                 '<a href="'+SOCIAL.instagram+'" target="_blank" rel="noopener" aria-label="Instagram">'+svg('ig')+'</a>'+
